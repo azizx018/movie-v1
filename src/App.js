@@ -6,6 +6,7 @@ import Layout from './Components/Layout.js'
 import Home from './Components/home/Home.js';
 import { Route, Routes } from 'react-router-dom';
 import Header from './Components/header/Header.js';
+import Trailer from './Components/trailer/Trailer';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout/>}>
           <Route path="/" element={<Home movies={movies}/>}></Route>
+          <Route path="/Trailer/:ytTrailerId" element={<Trailer></Trailer>}></Route>
 
         </Route>
       </Routes>
